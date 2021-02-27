@@ -1,11 +1,28 @@
 // --------------------------
 // Set-up styles
 // --------------------------
-* { box-sizing: border-box; }
-body { background: slategray; margin: 0; padding: 3em 1em;}
-ul { list-style: none; margin: 0; padding: 0;}
-figure { margin: 0; }
-figcaption { font-style: italic; font-size: 0.8em; color: grey; line-height: 1.4; }
+* {
+  box-sizing: border-box;
+}
+body {
+  background: slategray;
+  margin: 0;
+  padding: 3em 1em;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+figure {
+  margin: 0;
+}
+figcaption {
+  font-style: italic;
+  font-size: 0.8em;
+  color: grey;
+  line-height: 1.4;
+}
 
 // --------------------------
 // Grid styles
@@ -22,7 +39,10 @@ figcaption { font-style: italic; font-size: 0.8em; color: grey; line-height: 1.4
 
   @media all and (min-width: 600px) {
     grid-auto-flow: initial; // default: display items in rows and cols
-    grid-template-columns: repeat(auto-fit, minmax(auto,20em)); // as many columns with max-width of 20em;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(auto, 20em)
+    ); // as many columns with max-width of 20em;
     justify-content: center; // center the items - this is optional
   }
 
