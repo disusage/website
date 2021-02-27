@@ -10,7 +10,7 @@ figcaption { font-style: italic; font-size: 0.8em; color: grey; line-height: 1.4
 // --------------------------
 // Grid styles
 // --------------------------
-.grid {
+grid {
   display: grid;
   grid-auto-flow: column; // display the items in columns only, ie horizontal
   grid-auto-columns: 90%; // create as many columns as there are items. 90% so we can see next item on the right.
