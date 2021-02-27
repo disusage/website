@@ -46,7 +46,7 @@ figcaption {
     justify-content: center; // center the items - this is optional
   }
 
-  &__figure {
+&__figure {
     display: grid;
     grid-template-rows: 15em 1fr; // 15em high row for image – value could be whatever
     grid-gap: 1em;
