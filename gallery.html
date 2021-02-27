@@ -9,60 +9,30 @@
 
 <body>
 
-<ul class="grid">
-  <li>
-    <figure class="grid__figure">
-      <img src="https://picsum.photos/300/200/?random" alt="">
-      <figcaption>Vehicula Quam Nibh</figcaption>
-    </figure>
-  </li>
-  <li>
-    <figure class="grid__figure">
-      <img src="https://picsum.photos/200/800/?random" alt="">
-      <figcaption>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</figcaption>
-    </figure>
-  </li>
-  <li>
-    <figure class="grid__figure">
-      <img src="https://picsum.photos/200/300/?random" alt="">
-      <figcaption>Parturient Mollis Malesuada Tristique Inceptos.</figcaption>
-    </figure>
-  </li>
-  <li>
-    <figure class="grid__figure">
-      <img src="https://picsum.photos/400/200/?random" alt="">
-      <figcaption>Vehicula Quam Nibh</figcaption>
-    </figure>
-  </li>
-  <li>
-    <figure class="grid__figure">
-      <img src="https://picsum.photos/200/600/?random" alt="">
-      <figcaption>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</figcaption>
-    </figure>
-  </li>
-  <li>
-    <figure class="grid__figure">
-      <img src="https://picsum.photos/600/600/?random" alt="">
-      <figcaption>Parturient Mollis Malesuada Tristique Inceptos.</figcaption>
-    </figure>
-  </li>
-  <li>
-    <figure class="grid__figure">
-      <img src="https://picsum.photos/420/300/?random" alt="">
-      <figcaption>Vehicula Quam Nibh</figcaption>
-    </figure>
-  </li>
-  <li>
-    <figure class="grid__figure">
-      <img src="https://picsum.photos/800/800/?random" alt="">
-      <figcaption>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</figcaption>
-    </figure>
-  </li>
-  <li>
-    <figure class="grid__figure">
-      <img src="https://picsum.photos/640/400/?random" alt="">
-      <figcaption>Parturient Mollis Malesuada Tristique Inceptos.</figcaption>
-    </figure>
-  </li>
-</ul>
-</body>
+  <!-- The grid: four columns -->
+  <div class="row">
+    <div class="column">
+      <img src="img_nature.jpg" alt="Nature" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="img_snow.jpg" alt="Snow" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="img_mountains.jpg" alt="Mountains" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="img_lights.jpg" alt="Lights" onclick="myFunction(this);">
+    </div>
+  </div>
+
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
