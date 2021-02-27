@@ -8,25 +8,25 @@ h1 {
 }
 
 a:link {
-  color: green;
+  color: #e3d18a;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: pink;
+  color: #e3d18a;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: white;
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:active {
-  color: yellow;
+  color: #e3d18a;
   background-color: transparent;
   text-decoration: underline;
 }
