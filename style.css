@@ -36,3 +36,8 @@ h1 {
     background-color: transparent;
     text-decoration: underline;
   }
+
+footer {
+    color: #fde8cd;
+    text-align: center;
+}
