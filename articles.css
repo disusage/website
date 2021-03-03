@@ -1,0 +1,124 @@
+/* This is an example of a comment. You can quickly add a comment to highlighted text with Ctrl + / */
+
+* {
+  box-sizing: border-box;
+  font-size: 100%
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  padding: 14px 20px;
+  line-height: 1
+
+
+}
+
+.container {
+   max-width: 1000px;
+   padding: 20px
+   text-align: center;
+   margin: 0 auto;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #493323;
+  color: white;
+}
+
+/* When nesting styles, try not to exceed 3 selectors */
+
+.header h1 {
+  font-size: 40px;
+}
+
+a:link {
+  color: #493323;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #875d3e;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+main {
+    padding: 14px 20px;
+    margin: 30px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #493323;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: beige;
+  color: #493323;
+}
+
+.navbar a.active {
+  background-color: #493323;
+  color: white;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.main {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  font-style: italic
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}

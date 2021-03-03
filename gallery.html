@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-      <title>Tony's Gallery</title>
-      <meta charset="utf-8">
-</head>
+
+<title>Tony's Mansion</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
-  href="gallery.css">
+  href="style.css">
+
+</head>
+<body>
+
+<div class="header">
+  <h1>Tony's Mansion</h1>
+  <p>Staring at code for hours is easier when it's about your pet hamster</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="articles.html" >Articles</a>
+  <a href="gallery.html" class="active">Gallery</a>
+  <a href="contact.html" class="right">Contact</a>
+</div>
 
 <style>
 * {
@@ -78,13 +93,13 @@ body {
 <!-- The four columns -->
 <div class="row">
   <div class="column">
-    <img src="images/tony1.jpg" alt="Tony in his cage" style="width:100%" onclick="myFunction(this);">
+    <img src="images/tony1.jpg" alt="Tony in his sand bath" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
     <img src="images/tony9.jpg" alt="Closeup of Tony" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="images/tony3.jpg" alt="First picture of Tony" style="width:100%" onclick="myFunction(this);">
+    <img src="images/tony10.jpg" alt="Tony enjoying some timothy hay" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
     <img src="images/tony4.jpg" alt="Tony before his hair got long" style="width:100%" onclick="myFunction(this);">
@@ -92,16 +107,16 @@ body {
 </div>
 <div class="row">
   <div class="column">
-    <img src="images/tony5.jpg" alt="x" style="width:100%" onclick="myFunction(this);">
+    <img src="images/tony5.jpg" alt="Having a bin cage means seeing burrows sometimes!" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="images/tony6.jpg" alt="x" style="width:100%" onclick="myFunction(this);">
+    <img src="images/tony6.jpg" alt="Tony's way of saying Hello" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="images/tony7.jpg" alt="x" style="width:100%" onclick="myFunction(this);">
+    <img src="images/tony7.jpg" alt="Another burrow picture" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="images/tony8.jpg" alt="x" style="width:100%" onclick="myFunction(this);">
+    <img src="images/tony8.jpg" alt="Looks cozy" style="width:100%" onclick="myFunction(this);">
   </div>
 </div>
 
@@ -121,5 +136,8 @@ function myFunction(imgs) {
 }
 </script>
 
+<div class="footer">
+  <h6>Copyright <strong>Richard Wimbush</strong> 2021</h6>
+</div>
 </body>
 </html>
