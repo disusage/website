@@ -1,0 +1,151 @@
+/* This is an example of a comment. You can quickly add a comment to highlighted text with Ctrl + / */
+
+* {
+  box-sizing: border-box;
+  font-size: 100%
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  padding: 14px 20px;
+  line-height: 1
+
+
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #493323;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #875d3e;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #493323;
+  color: white;
+}
+
+/* When nesting styles, try not to exceed 3 selectors */
+
+.header h1 {
+  font-size: 40px;
+}
+
+a:link {
+  color: #493323;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #875d3e;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+main {
+    padding: 14px 20px;
+    margin: 30px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #493323;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: beige;
+  color: #493323;
+}
+
+.navbar a.active {
+  background-color: #493323;
+  color: white;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.main {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  font-style: italic
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
